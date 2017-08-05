@@ -15,12 +15,12 @@ app.get('/A1', function (req, res) {
 });
 
 app.get('/A2', function (req, res) {
-    res.send('A2 is here man.');
+    res.sendFile(path.join(__dirname, 'ui', 'a2.html'));
     
 });
 
 app.get('/A3', function (req, res) {
-    res.send('A3 is here man.');
+    res.sendFile(path.join(__dirname, 'ui', 'a3.html'));
     
 });
 app.get('/ui/style.css', function (req, res) {
