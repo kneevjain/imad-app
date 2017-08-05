@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/A1', function (req, res) {
-    res.send('A1 is here man.');
+    res.sendFile(path.join(__dirname, 'ui', 'a1.html'));
     
 });
 
